@@ -7,6 +7,6 @@ export function connect() {
     )
     console.log('Connect database success')
   } catch (error) {
-    console.log("~ file: database.ts:5 ~ connect ~ error:", error)
+    console.log("🚀 ~ file: database.ts:5 ~ connect ~ error:", error)
   }
 }
