@@ -27,9 +27,9 @@ describe('Event test', () => {
       .field('location[longitude]', event.location.longitude)
       .field('price[sector]', event.price[0].sector)
       .field('price[amount]', event.price[0].amount)
-      .attach('banner', '/Users/alexiaakattah/Downloads/banner.png')
-      .attach('flyers', '/Users/alexiaakattah/Downloads/flyer1.png')
-      .attach('flyers', '/Users/alexiaakattah/Downloads/flyer2.png')
+      .attach('banner', '/Users/Hiago/Downloads/banner.png')
+      .attach('flyers', '/Users/Hiago/Downloads/flyers1.png')
+      .attach('flyers', '/Users/Hiago/Downloads/flyers1.png')
     if (response.error) {
       console.log('file: Events.test.ts:34 ~ it ~ error', response.error)
     }
