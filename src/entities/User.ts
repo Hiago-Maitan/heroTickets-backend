@@ -1,5 +1,5 @@
 class User{
-  constructor(public name: string, public emial: string){
+  constructor(public name: string, public email: string){
 
   }
 }
