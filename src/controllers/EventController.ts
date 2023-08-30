@@ -19,7 +19,7 @@ class EventController {
         flyers: flyers.map((flyer: any) => flyer.filename),
       };
     }
-  
+
     try {
       await this.eventUseCase.create(eventData);
       return response
@@ -27,6 +27,18 @@ class EventController {
         .json({ message: 'Evento criado com sucesso.' })
     } catch (error) {
       next(error);
+    }
+  }
+  async findEventByLocation(request: Request, response: Response, next: NextFunction){
+    const {latitude, longitude} = request.query
+    try {
+      const events = await this.eventUseCase.findEventByLocation(
+        String(latitude),
+        String(longitude)
+      )
+      return response.status(200).json(events)
+    } catch (error) {
+      next(error)
     }
   }
 }
