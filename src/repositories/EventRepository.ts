@@ -7,6 +7,7 @@ interface EventRepository {
     location: Location,
     date: Date
   ): Promise<Event | undefined>
+  findEventsByCity(city: string): Promise<Event[]>
 }
 
 export { EventRepository }
