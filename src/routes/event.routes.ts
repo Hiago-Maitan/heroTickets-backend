@@ -29,6 +29,9 @@ class EventRoutes {
       ]),
       this.eventController.create.bind(this.eventController)
     );
+    this.router.get(
+      '/',
+      this.eventController.findEventByLocation.bind(this.eventController))
   }
 }
 
