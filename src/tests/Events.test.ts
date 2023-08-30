@@ -11,7 +11,7 @@ describe('Event test', () => {
       description: 'Evento descrição',
       city: 'Belo Horizonte',
       location: {
-        latitude: '-19.8658619',
+        latitude: '-19.8658659',
         longitude: '-43.9737064'
       },
       coupons: [],
