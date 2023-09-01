@@ -11,9 +11,10 @@ class Event {
     public banner: string,
     public flyers: string[],
     public coupons: string[],
-    public participants: User,
+    public participants: User[],
     public price: Price[],
     public city: string,
+    public categories: string[],
   ) { }
 }
 export { Event }
